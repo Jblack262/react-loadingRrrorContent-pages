@@ -1,0 +1,13 @@
+.contentPage {
+  @include gradientBackground;
+  @include fullscreenPage;
+
+  .slider {
+    max-width: 800px;
+    @include slideshow;
+  }
+  .slideNav .linkButton {
+    background-color: red;
+    @include linkButton;
+  }
+}
