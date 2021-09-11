@@ -1,28 +1,13 @@
 @mixin gradientBackground() {
-  background-color: $clr-gray-9;
-  position: relative;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1758%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1759)'%3e%3c/rect%3e%3cpath d='M1440 0L861.9 0L1440 72.84z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M861.9 0L1440 72.84L1440 330.65999999999997L740.67 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M740.67 0L1440 330.65999999999997L1440 360.32L576.8299999999999 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M576.8299999999999 0L1440 360.32L1440 469.06L251.0399999999999 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L515.56 560L0 478.87z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 478.87L515.56 560L842.8199999999999 560L0 329.83000000000004z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 329.83000000000004L842.8199999999999 560L923.7099999999999 560L0 213.49000000000004z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 213.49L923.7099999999999 560L952.2199999999999 560L0 148.35000000000002z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1758'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1759'%3e%3cstop stop-color='rgba(14%2c 42%2c 71%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(60%2c 99%2c 130%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   isolation: isolate;
-  &::before {
-    content: '';
-    position: fixed;
-    height: 120%;
-    width: 10rem;
-
-    top: 0;
-    right: 0;
-    z-index: -2;
-    background-color: $clr-gray-2;
-    overflow-x: hidden;
-
-    box-shadow: -10rem 0 0 $clr-gray-3, -20rem 0 0 $clr-gray-4,
-      -30rem 0 0 $clr-gray-5, -40rem 0 0 $clr-gray-6, -50rem 0 0 $clr-gray-7;
-
-    transform-origin: bottom right;
-    transform: rotate(5deg);
-  }
 }
 @mixin fullscreenPage() {
-  width: 100vw;
+  width: 100%;
+  height: 100%;
   min-height: 100vh;
 }
 
@@ -209,17 +194,17 @@
     padding: 0;
     margin: 0;
     li:first-of-type::before {
-      content: '';
+      content: "";
     }
     li:last-of-type::after {
-      content: '';
+      content: "";
     }
     li::after {
-      content: ' | ';
+      content: " | ";
       color: $fontColor;
     }
     li::before {
-      content: ' | ';
+      content: " | ";
       color: $fontColor;
     }
   }

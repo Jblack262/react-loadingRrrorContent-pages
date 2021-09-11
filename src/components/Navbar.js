@@ -9,7 +9,6 @@ function Navbar() {
 
     const handleToggle = () => {
         setActive(!isOpen);
-        console.log("click")
     }
     
     return (
