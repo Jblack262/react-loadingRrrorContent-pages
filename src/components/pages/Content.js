@@ -63,26 +63,26 @@ function Content() {
         </div>
       </section>
 
-      <footer>
-        <div className="row top">
-            <div className="col">
-                <ul>
-                    <li className="title">Services</li>
-                    <li><a href="/">Web Design</a></li>
-                    <li><a href="/">Hosting</a></li>
-                    <li><a href="/">Development</a></li>
-                </ul>
-                <ul>
-                    <li className="title">About</li>
-                    <li><a href="/">Company</a></li>
-                    <li><a href="/">Team</a></li>
-                    <li><a href="/">Jobs</a></li>
-                </ul>
-            </div>
-            <div className="col desc">
-                <h3>Title</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, est nulla porro voluptates maiores inventore qui odio sunt dolorum illo.</p>
-            </div>
+        <footer>
+          <div className="row top">
+              <div className="col">
+                  <ul>
+                      <li className="title">Services</li>
+                      <li><a href="/">Web Design</a></li>
+                      <li><a href="/">Hosting</a></li>
+                      <li><a href="/">Development</a></li>
+                  </ul>
+                  <ul>
+                      <li className="title">About</li>
+                      <li><a href="/">Company</a></li>
+                      <li><a href="/">Team</a></li>
+                      <li><a href="/">Jobs</a></li>
+                  </ul>
+              </div>
+              <div className="col desc">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, est nulla porro voluptates maiores inventore qui odio sunt dolorum illo.</p>
+              </div>
         </div>
         <div className="row">
             <div className="socials">
